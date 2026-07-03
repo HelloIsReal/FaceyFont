@@ -7,15 +7,19 @@
 
 .notepadClass{
     width: 100%;
-    max-width: 600px;
+    /*
+    max-width: 800px;
+    */
     margin: 20px auto;
-    padding: 40px 20px 40px 60px;
+    padding: 30px 20px 40px 60px;
     background-color: #ffffff;
 
     background-image:
         linear-gradient(#93c0f5 1px, transparent 1px);
     background-size: 100% 32px;
-
+    
+}
+/*
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #dddd;
     position: relative;
@@ -30,6 +34,7 @@
     width: 1px;
     border-left: 2px solid #ffaa99;
 }
+*/
 
 .content {
     font-family: "FaceyFont", serif;
@@ -37,4 +42,21 @@
     line-height: 32px; /* this should be the same as the background size set in notepadClass. */
     color: #333;
     outline: none;
+}
+.centered-image {
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000;
+
+    
+}
+.centered-text {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    height: 300px;
 }
