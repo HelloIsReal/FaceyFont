@@ -54,9 +54,10 @@
     
 }
 .centered-text {
+    margin: 320px auto;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items:flex-end;
+    left:50%;
+    
     height: 300px;
 }
