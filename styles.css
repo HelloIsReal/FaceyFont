@@ -1,0 +1,13 @@
+@font-face{
+    font-family: "FaceyFont";
+    src: url("./FaceyFont/Faceyfont.otf") format("opentype");
+}
+
+.FFont {
+    font-family: "FaceyFont", serif;
+    font-size: 128px;
+}
+
+body {
+    background-color: antiquewhite;
+}
