@@ -3,11 +3,38 @@
     src: url("./FaceyFont/Faceyfont.otf") format("opentype");
 }
 
-.FFont {
-    font-family: "FaceyFont", serif;
-    font-size: 128px;
+
+
+.notepadClass{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px 20px 40px 60px;
+    background-color: #ffffff;
+
+    background-image:
+        linear-gradient(#93c0f5 1px, transparent 1px);
+    background-size: 100% 32px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddd;
+    position: relative;
 }
 
-body {
-    background-color: antiquewhite;
+.notepad::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 45px;
+    width: 1px;
+    border-left: 2px solid #ffaa99;
+}
+
+.content {
+    font-family: "FaceyFont", serif;
+    font-size: 32px;
+    line-height: 32px; /* this should be the same as the background size set in notepadClass. */
+    color: #333;
+    outline: none;
 }
