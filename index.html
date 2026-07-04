@@ -6,13 +6,16 @@
 <header>
     <div>
         <a class="main-font" href="#downloads">Download the Font!</a>
-        
+        <audio autoplay loop id="audioLoop" controls>
+            <source src="EthnoJazzVocal-szegvari.wav" type="audio/wav">
+        </audio>
         
     </div>
     
 </header>
 
 <body>
+    
     <div>
     <img src="images/mikuPeace.png">
     <h1>Introducing.... Facey font!</h1>
@@ -127,6 +130,7 @@
         </div>
         <br><br><br><br>
 
+        
 
 
     <script>
@@ -138,10 +142,18 @@
             let inputField = document.getElementById("case-changer");
             inputField.value = inputField.value.toLowerCase();
         }
+        document.addEventListener("click", () => {
+            const audio = document.getElementById("audioLoop");
+            audio.play().catch(error =>{
+                console.log("Wasn't able to Autoplay music!");
+            });
+        }, {once: true });
+
 
     </script>
 
     
 </body>
+
 
 </html>
