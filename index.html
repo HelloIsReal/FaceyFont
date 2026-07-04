@@ -183,11 +183,8 @@
 
         
         var slider = document.getElementById("myRange");
-        var output = document.getElementById("demo");
-        //output.innerHTML = slider.value;
         let sliderValue=28;
         slider.oninput = function(){
-            // output.innerHTML = this.value; 
             sliderValue=this.value
             document.documentElement.style.setProperty("--font-size", sliderValue + "px");
         }
