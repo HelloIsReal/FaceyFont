@@ -1,0 +1,8 @@
+@font-face{
+    font-family: "FaceyFont";
+    src: url("./FaceyFont/Faceyfont-Regular.otf") format("opentype");
+}
+
+.main-font {
+    font-family: "FaceyFont", serif;
+}
