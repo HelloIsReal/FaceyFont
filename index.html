@@ -17,6 +17,17 @@
 </header>
 
 <body class="container">
+    <style>
+        :root{
+            --font-size:28pt;
+        }
+
+    .special-box{
+        font-family: "FaceyFont", serif;
+        font-size: var(--font-size);
+        width: 1000px;
+    }
+    </style>
     
     <div>
     <img src="images/mikuPeace.png">
@@ -40,7 +51,13 @@
     </div>
 
     <div>
-        <input class="normal-box" type="text" id="normal-text" name="font-test" placeholder="Try to type something here!"><br><br>
+        <input class="special-box" type="text" id="normal-text" name="font-test" placeholder="Try to type something here!"><br><br>
+    </div>
+    <div class="slidecontainer">
+        <input type="range" min="20" max="96" value="50" class="slider" id="myRange">
+    </div>
+    <br>
+    <div>
         Here's a bigger box to look at the letters closer!<br>
         <input class="big-box" type="text" id="big-letter-text" name="letter-test" placeholder="xXdD">
     </div>
@@ -124,6 +141,19 @@
             <span class="letter">&</span>
         </div>
         <br><br><br><br><br>
+        <h2>Here's some words that work well with this font!</h2>
+        <p class="big-box">
+            CHOMP
+            happy
+            ANGRY
+            extravaganza
+            Fear
+            ZeEF
+            popular
+            MAD
+        </p>
+
+
         <div id="downloads">
             <h1>Did you enjoy looking at the font, or would you like to use this font yourself?</h1>
             <b>
@@ -150,6 +180,20 @@
                 console.log("Wasn't able to Autoplay music!");
             });
         }, {once: true });
+
+        
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        //output.innerHTML = slider.value;
+        let sliderValue=28;
+        slider.oninput = function(){
+            // output.innerHTML = this.value; 
+            sliderValue=this.value
+            document.documentElement.style.setProperty("--font-size", sliderValue + "px");
+        }
+
+        
+
 
         let lastScroll=0;
         const header = document.getElementById("header");
