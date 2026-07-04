@@ -17,3 +17,35 @@
     font-size: 128pt;
     width: 384px;
 }
+
+
+.letter-showcase{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1000px;
+}
+.letter{
+    font-family: "FaceyFont", serif;
+    display: inline-block;
+    font-size: 128px;
+    color: #000000;
+    padding:10px;
+    border: 1px solid #b3b3b3;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    transition: all 0.2s ease;
+}
+
+.letter:hover{
+    background-color: #000000;
+    color:#ffffff;
+    transform:translateY(-5px);
+}
+
+header{
+    position: sticky;
+    top:0;
+    background-color: #b3b3b3;
+    padding: 0.03px 20px;
+}

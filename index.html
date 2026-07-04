@@ -3,6 +3,10 @@
     <title>Facey Font Showcase!</title>
     <link rel="stylesheet" href="index.css">
 </head>
+<header>
+    <h1 class="main-font">Download the Font here! : </h1>
+</header>
+
 <body>
     <div>
     <img src="images/mikuPeace.png">
@@ -18,11 +22,11 @@
     <h1 class="main-font">HEY! I'M VERY VERY ANGRY!!!</h1><br>
     You can see that all the capital letters are angry 😡<br>
     There isn't a specific reason as to why I made lowercase letters happy, and uppercase angry.<br>
-    Though I thought it would be interesting to see a font where both cases were different in some way.<br>
+    Though I thought it would be interesting to see a font where both cases were different in some way.<br><br>
     Also here's how it looks like with using both cases together<br>
     <h1 class="main-font">The Quick Brown Fox Jumped Over The Lazy Dog</h1><br>
-    When you first look at the font, it may seem like each letter just has a bunch of artifacts in it.
-    Though I think that's what makes it somewhat unique, as it makes the font stand out from other regular fonts.
+    When you first look at the font, it may seem like each letter just has a bunch of artifacts in it.<br>
+    Though I think that's what makes it somewhat unique, as it makes the font stand out from other regular fonts.<br>
     </div>
 
     <div>
@@ -33,15 +37,94 @@
 
     <div>
         <br><br><br><br>
-        Now here's some extra doohickeys to experiment with the font!<br>
-        <input class="normal-box" type="text" id="test" name="amogus" placeholder="type something to experiment!"><br><br>
-        <button style="text-transform: uppercase;">Uppercase!</button>
+        <h1>Now here's some extra doohickeys to experiment with the font!</h1>
+        <input class="normal-box" type="text" id="case-changer" name="different-cases-textbox" placeholder="the quick brown fox jumped over the lazy dog"><br>
+        <button onclick="ToUppercase()" style="text-transform: uppercase;">Uppercase!</button>
+        <button onclick="toLowerCase()" style="text-transform: lowercase;">Lowercase!</button>
+        <br><br><br>
+
+        <h3>Here's the entire catalogue of all the letters in this font!</h3>
     </div>
+        <!-- this is probably really inefficient, but idk how else to do it lol. Maybe through some javascript loop-->
+        <div class="letter-showcase">
+            <span class="letter">A</span>
+            <span class="letter">B</span>
+            <span class="letter">C</span>
+            <span class="letter">D</span>
+            <span class="letter">E</span>
+            <span class="letter">F</span>
+            <span class="letter">G</span>
+            <span class="letter">H</span>
+            <span class="letter">I</span>
+            <span class="letter">J</span>
+            <span class="letter">K</span>
+            <span class="letter">L</span>
+            <span class="letter">M</span>
+            <span class="letter">N</span>
+            <span class="letter">O</span>
+            <span class="letter">P</span>
+            <span class="letter">Q</span>
+            <span class="letter">R</span>
+            <span class="letter">S</span>
+            <span class="letter">T</span>
+            <span class="letter">U</span>
+            <span class="letter">V</span>
+            <span class="letter">W</span>
+            <span class="letter">X</span>
+            <span class="letter">Y</span>
+            <span class="letter">Z</span>
+
+            <span class="letter">a</span>
+            <span class="letter">b</span>
+            <span class="letter">c</span>
+            <span class="letter">d</span>
+            <span class="letter">e</span>
+            <span class="letter">f</span>
+            <span class="letter">g</span>
+            <span class="letter">h</span>
+            <span class="letter">i</span>
+            <span class="letter">j</span>
+            <span class="letter">k</span>
+            <span class="letter">l</span>
+            <span class="letter">m</span>
+            <span class="letter">n</span>
+            <span class="letter">o</span>
+            <span class="letter">p</span>
+            <span class="letter">q</span>
+            <span class="letter">r</span>
+            <span class="letter">s</span>
+            <span class="letter">t</span>
+            <span class="letter">u</span>
+            <span class="letter">v</span>
+            <span class="letter">w</span>
+            <span class="letter">x</span>
+            <span class="letter">y</span>
+            <span class="letter">z</span>
+            
+            <span class="letter">,</span>
+            <span class="letter">.</span>
+            <span class="letter">;</span>
+            <span class="letter">:</span>
+            <span class="letter">/</span>
+            <span class="letter">?</span>
+            <span class="letter">!</span>
+            <span class="letter">#</span>
+            <span class="letter">$</span>
+            <span class="letter">*</span>
+            <span class="letter">&</span>
+        </div>
 
 
 
     <script>
-        
+        function ToUppercase(){
+            let inputField = document.getElementById("case-changer");
+            inputField.value = inputField.value.toUpperCase();
+        }
+        function toLowerCase(){
+            let inputField = document.getElementById("case-changer");
+            inputField.value = inputField.value.toLowerCase();
+        }
 
     </script>
 
