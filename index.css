@@ -31,7 +31,7 @@
 
 .big-box {
     font-family: "FaceyFont", serif;
-    font-size: 128pt;
+    font-size: 140pt;
     width: 384px;
 }
 
@@ -58,6 +58,7 @@
     background-color: #000000;
     color:#ffffff;
     transform:translateY(-5px);
+    font-size: 150px;
 }
 
 #header{
