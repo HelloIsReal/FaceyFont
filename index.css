@@ -3,6 +3,10 @@
     src: url("./FaceyFont/Faceyfont-Regular.otf") format("opentype");
 }
 
+body{
+    margin:0;
+}
+
 .main-font {
     font-family: "FaceyFont", serif;
 }
@@ -43,11 +47,22 @@
     transform:translateY(-5px);
 }
 
-header{
+#header{
     font-size: 32pt;
     position: sticky;
     top:0;
     background-color: #b3b3b3;
     padding: 0.03px 20px;
-    margin: 0;
+    z-index: 10000;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#header.hide{
+    transform: translateY(-100%)
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
 }

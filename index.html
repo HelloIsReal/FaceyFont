@@ -3,13 +3,14 @@
     <title>Facey Font Showcase!</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<header>
+<header id="header">
     <div>
-        <a class="main-font" href="#downloads">Download the Font!</a>
         <audio autoplay loop id="audioLoop" controls>
             <source src="EthnoJazzVocal-szegvari.wav" type="audio/wav">
         </audio>
-        
+        <nav>
+            <a class="main-font" href="#downloads">Click here for FaceyFont!</a>
+        </nav>
     </div>
     
 </header>
@@ -149,6 +150,20 @@
             });
         }, {once: true });
 
+        let lastScroll=0;
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", () =>{
+            header.classList.add("hide");
+        const currentScroll = window.pageYOffset;
+            if(currentScroll > lastScroll && currentScroll > 70){
+                header.classList.add("hide");
+            } else{
+                header.classList.remove("hide");
+            }
+
+            lastScroll = currentScroll;
+        });
 
     </script>
 
