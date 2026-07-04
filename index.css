@@ -6,3 +6,14 @@
 .main-font {
     font-family: "FaceyFont", serif;
 }
+.normal-box {
+    font-family: "FaceyFont", serif;
+    font-size: 28pt;
+    width: 1000px;
+}
+
+.big-box {
+    font-family: "FaceyFont", serif;
+    font-size: 128pt;
+    width: 384px;
+}
