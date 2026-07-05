@@ -16,9 +16,9 @@ Do not copy and paste code for commercial use.
         </audio>
         <nav>
             <a class="main-font" href="#downloads">Click here for FaceyFont!</a><br>
-            
+            <a class="main-font" href="story.html">Click here: The story of the happy & ANGRY</a><br>
+            <a class="main-font" href="coolpage.html">Click here: COOL PAGE</a>
         </nav>
-        <a class="main-font" href="story.html">Click here: The story of the happy & ANGRY</a>
     </div>
     
 </header>
@@ -37,22 +37,38 @@ Do not copy and paste code for commercial use.
     </style>
     
     <div>
-    <img src="images/mikuPeace.png">
+    
+
+    <img src="images/mikuPeace.png" alt="cute miku peace sign"
+    style="cursor: pointer;"
+    onmousedown="document.getElementById('hover-sound').play(); document.getElementById('miku-text').style.display = 'block';"
+    onmouseout="document.getElementById('hover-sound').pause(); document.getElementById('hover-sound').currentTime = 0; document.getElementById('miku-text').style.display = 'none';">
+
+    <audio id="hover-sound" src="Mikudayo.mp3"  type="audio/mp3"></audio>
+    <h1 class="normal-box" id="miku-text" style="display: none;">Miku dayooooo</h2>
+    
+
     <h1>Introducing.... Facey font!</h1>
     Facey font is unique since, well it gives every letter a face lol. <br>
     But this font is more than that... this font has a story!<br>
     If you experiment around with the letters, you may notice something interesting!<br>
     For example:<br>
     <h1 class="main-font">hello! i'm feeling super happy!</h1><br>
+
+
     Taking a closer look at the text, you can see that each letters is a face!<br>
     but there's a but more to this font than just that<br>
     For example:<br>
     <h1 class="main-font">HEY! I'M VERY VERY ANGRY!!!</h1><br>
+
+
     You can see that all the capital letters are angry 😡<br>
     There isn't a specific reason as to why I made lowercase letters happy, and uppercase angry.<br>
     Though I thought it would be interesting to see a font where both cases were different in some way.<br><br>
     Also here's how it looks like with using both cases together<br>
     <h1 class="main-font">The Quick Brown Fox Jumped Over The Lazy Dog</h1><br>
+
+
     When you first look at the font, it may seem like each letter just has a bunch of artifacts in it.<br>
     Though I think that's what makes it somewhat unique, as it makes the font stand out from other regular fonts.<br>
     </div>
@@ -167,7 +183,7 @@ Do not copy and paste code for commercial use.
         <div id="downloads">
             <h1>Did you enjoy looking at the font, or would you like to use this font yourself?</h1>
             <b>
-            Then download the font here! <a href="https://github.com/HelloIsReal/FaceyFont/releases/tag/Release" target="_blank">Download Font</a>
+            Then download the font here! <br><a href="https://github.com/HelloIsReal/FaceyFont/releases/tag/Release" target="_blank" class="normal-box">Download Font</a>
             </b>
         </div>
         <br><br><br><br>
