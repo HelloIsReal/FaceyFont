@@ -120,3 +120,25 @@ a{
     background: #93c0f5;
     cursor:pointer;
 }
+
+.button{
+    background-color: rgb(238, 224, 205);
+    border:none;
+    color:rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align:center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 24px;
+    cursor:pointer;
+    font-family: "FaceyFont", serif;
+    opacity: 0.7;
+    transition: all 0.15s ease-in-out;
+    border-radius: 0.5rem;
+    border:1px solid #000000;
+}
+
+.button:hover{
+    opacity: 1;
+    transform: translateY(-5%);
+}

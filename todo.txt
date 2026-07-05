@@ -1,0 +1,5 @@
+Create a favicon image.
+Create a logo for the font.
+Create examples image use cases
+- Movie posters (one for happy, one for sad)
+- one as a game logo
