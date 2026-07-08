@@ -7,6 +7,6 @@ Create examples image use cases
 
 
 
-Finish the font creation section (fontCreation.html)
+Finish the font creation section (fontCreation.html)✅
 Finish the posters section (posters.html)
 Make and add stuff to the README.md

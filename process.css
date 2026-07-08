@@ -65,9 +65,10 @@
         linear-gradient(#93c0f5 1px, transparent 1px);
     background-size: 100% 32px;
 }
+
 .big {
     font-family: "FaceyFont", serif;
-    font-size: 35pt;
+    font-size: 32pt;
     position: relative;
     max-width: 40rem;
     margin: 0 auto;
@@ -75,8 +76,16 @@
 
 .normal {
     font-family: "FaceyFont", serif;
-    font-size: 28pt;
+    font-size: 24pt;
     position: relative;
     max-width: 40rem;
     margin: 0 auto;
+}
+
+.normal-2 {
+    font-family: "FaceyFont", serif;
+    font-size: 24pt;
+    position: relative;
+    max-width: 20rem;
+    left: 33%
 }
