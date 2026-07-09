@@ -1,6 +1,5 @@
 # FaceyFont
 ### Facey Font created for [Typeface Hack club!](https://typeface.hackclub.com/)
-Created by Tishar Sreekantam
 
 ![Facey Font Logo](logo/logo.png)
 This... is Facey Font!
