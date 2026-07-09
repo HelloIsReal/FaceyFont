@@ -18,12 +18,15 @@ Do not copy and paste code for commercial use.
             <source src="EthnoJazzVocal-szegvari.wav" type="audio/wav">
         </audio>
         <nav>
-            
-            <a class="main-font" href="#downloads">Click here to download FaceyFont!</a><br>
+            <audio id="click-sound" src="mouse double-click.mp3"  type="audio/mp3"></audio>
+            <a class="main-font" href="#downloads" onmousedown="document.getElementById('click-sound').play();"
+            >Click here to download FaceyFont!</a><br>
             <a class="main-font" href="story.html">Click here: The story of the happy & ANGRY</a><br>
             <a class="main-font" href="fontCreation.html#slide-1">Click here: Font creation process</a><br>
             <a class="main-font" href="posters.html">Click here: Font poster examples!</a><br>
             <a class="main-font" href="letterToSong.html">Click here: one letter, one favourite song</a>
+
+
         </nav>
     </div>
     
@@ -47,10 +50,10 @@ Do not copy and paste code for commercial use.
 
     <img src="images/mikuPeace.png" alt="cute miku peace sign"
     style="cursor: pointer;"
-    onmousedown="document.getElementById('hover-sound').play(); document.getElementById('miku-text').style.display = 'block';"
-    onmouseout="document.getElementById('hover-sound').pause(); document.getElementById('hover-sound').currentTime = 0; document.getElementById('miku-text').style.display = 'none';">
+    onmousedown="document.getElementById('miku-sound').play(); document.getElementById('miku-text').style.display = 'block';"
+    onmouseout="document.getElementById('miku-sound').pause(); document.getElementById('miku-sound').currentTime = 0; document.getElementById('miku-text').style.display = 'none';">
 
-    <audio id="hover-sound" src="Mikudayo.mp3"  type="audio/mp3"></audio>
+    <audio id="miku-sound" src="Mikudayo.mp3"  type="audio/mp3"></audio>
     <h1 class="normal-box" id="miku-text" style="display: none;">Miku dayooooo</h2>
     
 
@@ -103,8 +106,8 @@ Do not copy and paste code for commercial use.
         <br><br><br><br>
         <h1>Now here's some extra doohickeys to experiment with the font!</h1>
         <input class="normal-box" type="text" id="case-changer" name="different-cases-textbox" placeholder="the quick brown fox jumped over the lazy dog"><br><br>
-        <button class="button" onclick="ToUppercase()" style="text-transform: uppercase;">Uppercase!</button>
-        <button class="button" onclick="toLowerCase()" style="text-transform: lowercase;">Lowercase!</button>
+        <button class="button" onclick="ToUppercase()" style="text-transform: uppercase;" onmousedown="document.getElementById('click-sound').play();">Uppercase!</button>
+        <button class="button" onclick="toLowerCase()" style="text-transform: lowercase;" onmousedown="document.getElementById('click-sound').play();">Lowercase!</button>
         <br><br><br>
 
         <h3>Here's the entire catalogue of all the letters in this font!</h3>
@@ -215,7 +218,7 @@ Do not copy and paste code for commercial use.
         <div id="downloads">
             <h1>Did you enjoy looking at the font, or would you like to use this font yourself?</h1>
             <b>
-            Then download the font here! <br><a href="https://github.com/HelloIsReal/FaceyFont/releases/tag/Release" target="_blank" class="normal-box">Download Font</a>
+            Then download the font here! <br><a href="https://github.com/HelloIsReal/FaceyFont/releases/tag/Release" target="_blank" class="normal-box" onmousedown="document.getElementById('click-sound').play();">Download Font</a>
             </b>
         </div>
         <br><br><br><br>
