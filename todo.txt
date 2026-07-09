@@ -8,6 +8,6 @@ Create examples image use cases
 
 
 Finish the font creation section (fontCreation.html)✅
-Finish the posters section (posters.html)
+Finish the posters section (posters.html)✅
 Make and add stuff to the README.md
-Make a 404 page? gotta learn to make one
+Make a 404 page? gotta learn to make one✅
